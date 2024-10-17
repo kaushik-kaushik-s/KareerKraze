@@ -1,57 +1,57 @@
 // Firebase configuration
-const firebaseConfig = {
+// const firebaseConfig = {
 
-};
+// };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
 
 // Get references to auth and firestore
-const auth = firebase.auth();
-const db = firebase.firestore();
+// const auth = firebase.auth();
+// const db = firebase.firestore();
 
 // Sign-up function
 function signUp() {
-    const email = document.getElementById("signup-email").value;
-    const password = document.getElementById("signup-password").value;
-    const username = document.getElementById("signup-username").value;
+    // const email = document.getElementById("signup-email").value;
+    // const password = document.getElementById("signup-password").value;
+    // const username = document.getElementById("signup-username").value;
 
-    auth.createUserWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            // Signed in 
-            const user = userCredential.user;
-            // Add user to Firestore
-            return db.collection("users").doc(user.uid).set({
-                username: username,
-                email: email
-            });
-        })
-        .then(() => {
-            alert("User created successfully!");
-            // You can redirect the user or update UI here
-        })
-        .catch((error) => {
-            const errorMessage = error.message;
-            alert(errorMessage);
-        });
+    // auth.createUserWithEmailAndPassword(email, password)
+    //     .then((userCredential) => {
+    //         // Signed in 
+    //         const user = userCredential.user;
+    //         // Add user to Firestore
+    //         return db.collection("users").doc(user.uid).set({
+    //             username: username,
+    //             email: email
+    //         });
+    //     })
+    //     .then(() => {
+    //         alert("User created successfully!");
+    //         // You can redirect the user or update UI here
+    //     })
+    //     .catch((error) => {
+    //         const errorMessage = error.message;
+    //         alert(errorMessage);
+    //     });
 }
 
 // Sign-in function
 function signIn() {
-    const email = document.getElementById("signin-email").value;
-    const password = document.getElementById("signin-password").value;
+    // const email = document.getElementById("signin-email").value;
+    // const password = document.getElementById("signin-password").value;
 
-    auth.signInWithEmailAndPassword(email, password)
-        .then((userCredential) => {
-            // Signed in
-            const user = userCredential.user;
-            alert("Signed in successfully!");
-            // You can redirect the user or update UI here
-        })
-        .catch((error) => {
-            const errorMessage = error.message;
-            alert(errorMessage);
-        });
+    // auth.signInWithEmailAndPassword(email, password)
+    //     .then((userCredential) => {
+    //         // Signed in
+    //         const user = userCredential.user;
+    //         alert("Signed in successfully!");
+    //         // You can redirect the user or update UI here
+    //     })
+    //     .catch((error) => {
+    //         const errorMessage = error.message;
+    //         alert(errorMessage);
+    //     });
 }
 
 // Add event listeners to buttons
