@@ -3,67 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KareerKraze - Login/Sign Up</title>
-    <link rel="stylesheet" href="auth.css">
+    <title>KareerKraze - AI-Powered Job Matching Revolution</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="forms-container">
-            <div class="signin-signup">
-                <form action="#" class="sign-in-form">
-                    <h2 class="title">Sign in</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Email" id="signin-email" />
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" id="signin-password" />
-                    </div>
-                    <input type="submit" value="Login" class="btn solid" id="signin-button" />
-                </form>
-                <form action="#" class="sign-up-form">
-                    <h2 class="title">Sign up</h2>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" id="signup-username" />
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email" id="signup-email" />
-                    </div>
-                    <div class="input-field">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" id="signup-password" />
-                    </div>
-                    <input type="submit" class="btn" value="Sign up" id="signup-button" />
-                </form>
-            </div>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">KareerKraze</div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="/auth/auth.html" class="btn">Login</a></li>
+                    <li><a href="/auth/auth.html" class="btn">Sign Up</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="panels-container">
-            <div class="panel left-panel">
-                <div class="content">
-                    <h3>New here?</h3>
-                    <p>Join KareerKraze and revolutionize your job search with AI-powered matching!</p>
-                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>Revolutionize Your Job Search with AI</h1>
+                <p>KareerKraze harnesses the power of artificial intelligence to connect you with your dream job faster and more efficiently than ever before.</p>
+                <a href="#" class="btn btn-large">Start Your Journey</a>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="container">
+                <h2>How KareerKraze Works</h2>
+                <div class="process-grid">
+                    <div class="process-item">
+                        <i class="fas fa-spider"></i>
+                        <h3>Web Crawling</h3>
+                        <p>Our AI spiders continuously scan the internet, aggregating job postings from thousands of sources in real-time.</p>
+                    </div>
+                    <div class="process-item">
+                        <i class="fas fa-user-circle"></i>
+                        <h3>Profile Creation</h3>
+                        <p>Answer a series of tailored questions to create your comprehensive career profile, powered by our advanced AI algorithms.</p>
+                    </div>
+                    <div class="process-item">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI Matching</h3>
+                        <p>Our sophisticated AI analyzes your profile against millions of job postings to find your perfect career matches.</p>
+                    </div>
+                    <div class="process-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Continuous Learning</h3>
+                        <p>The more you use KareerKraze, the smarter it becomes, constantly refining your matches based on your interactions and feedback.</p>
+                    </div>
                 </div>
             </div>
-            <div class="panel right-panel">
-                <div class="content">
-                    <h3>One of us?</h3>
-                    <p>Sign in to access your personalized job matches and career insights!</p>
-                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h2>Cutting-Edge Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Precision Matching</h3>
+                        <p>Our AI doesn't just match keywords; it understands context, skills, and career trajectories to find truly fitting opportunities.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Real-Time Updates</h3>
+                        <p>Watch live as KareerKraze constantly updates with new job postings, ensuring you're always first in line for the best opportunities.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Career Insights</h3>
+                        <p>Gain valuable insights into industry trends, salary benchmarks, and skill demand to make informed career decisions.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-handshake"></i>
+                        <h3>User Rankings</h3>
+                        <p>Rank job posts you like or don't like will allow our AI to refine on your preferences, providing the best jobs possible.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <script src="auth.js"></script>
+        <section id="technology">
+            <div class="container">
+                <h2>Powered by Cutting-Edge Technology</h2>
+                <div class="tech-flex">
+                    <div class="tech-item">
+                        <i class="fas fa-robot"></i>
+                        <h3>Advanced AI</h3>
+                        <p>Utilizing state-of-the-art machine learning algorithms and natural language processing to understand the nuances of both job seekers and job postings.</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database"></i>
+                        <h3>Big Data Analytics</h3>
+                        <p>Processing vast amounts of data to provide accurate matches and valuable insights into job market trends.</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Robust Security</h3>
+                        <p>Employing advanced encryption and security measures to protect your personal information and ensure privacy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta">
+            <div class="container">
+                <h2>Ready to Transform Your Job Search?</h2>
+                <p>Join thousands of professionals who have found their dream careers through KareerKraze.</p>
+                <a href="auth/auth.html" class="btn btn-large">Sign Up Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KareerKraze</h3>
+                    <p>Revolutionizing job search with AI</p>
+                </div>
+                <div class="footer-section">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KareerKraze. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
